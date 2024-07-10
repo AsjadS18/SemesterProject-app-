@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "9645647534",
+    "firebase_url": "https://medical-health-care-app-default-rtdb.firebaseio.com",
+    "project_id": "medical-health-care-app",
+    "storage_bucket": "medical-health-care-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9645647534:android:e3fbc6917e0a2fda232f3f",
+        "android_client_info": {
+          "package_name": "com.example.final_semesterptoject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxVVSZsSHhkIkTY_xZL5Kfp9eazKGG7es"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

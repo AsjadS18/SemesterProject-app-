@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medical History"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check the conditions that apply to you or to any members of your immediate relatives:"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/asthma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Asthma" />
+
+        <CheckBox
+            android:id="@+id/cancer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancer" />
+
+        <CheckBox
+            android:id="@+id/cardiac_disease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cardiac disease" />
+
+        <CheckBox
+            android:id="@+id/diabetes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diabetes" />
+
+        <CheckBox
+            android:id="@+id/hypertension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hypertension" />
+
+        <CheckBox
+            android:id="@+id/psychiatric_disorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Psychiatric disorder" />
+
+        <CheckBox
+            android:id="@+id/epilepsy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Epilepsy" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check the symptoms that you're currently experiencing:"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/chest_pain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chest pain" />
+
+        <CheckBox
+            android:id="@+id/respiratory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Respiratory" />
+
+        <CheckBox
+            android:id="@+id/cardiac_disease_symptom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cardiac disease" />
+
+        <CheckBox
+            android:id="@+id/cardiovascular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cardiovascular" />
+
+        <CheckBox
+            android:id="@+id/hematological"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hematological" />
+
+        <CheckBox
+            android:id="@+id/lymphatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lymphatic" />
+
+        <CheckBox
+            android:id="@+id/neurological"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neurological" />
+
+        <CheckBox
+            android:id="@+id/psychiatric_symptom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Psychiatric" />
+
+        <CheckBox
+            android:id="@+id/gastrointestinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gastrointestinal" />
+
+        <CheckBox
+            android:id="@+id/genitourinary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genitourinary" />
+
+        <CheckBox
+            android:id="@+id/weight_gain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight gain" />
+
+        <CheckBox
+            android:id="@+id/weight_loss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight loss" />
+
+        <CheckBox
+            android:id="@+id/musculoskeletal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Musculoskeletal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you currently taking any medication?"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/medication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/medication_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:layout_marginRight="35dp"/>
+
+            <RadioButton
+                android:id="@+id/medication_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is your Gender?"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/gender_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"
+                tools:ignore="HardcodedText"
+                android:layout_marginRight="35dp"/>
+
+            <RadioButton
+                android:id="@+id/gender_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                tools:ignore="HardcodedText" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you have any allergies?"
+            android:layout_marginTop="16dp" />
+
+        <RadioGroup
+            android:id="@+id/medication_allergy_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/yes_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/no_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/not_sure_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not Sure" />
+
+        </RadioGroup>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you use or do you have history of using tobacco?"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/tobacco_use_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you use or do you have history of using illegal drugs?"
+            android:layout_marginTop="16dp" />
+        <Spinner
+            android:id="@+id/illegal_drug_use_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How often do you consume Alcohal?"
+            android:layout_marginTop="16dp" />
+         <RadioGroup
+            android:id="@+id/alcohol_frequency_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/daily_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Daily" />
+
+            <RadioButton
+                android:id="@+id/weekly_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weekly" />
+
+            <RadioButton
+                android:id="@+id/monthly_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly" />
+
+            <RadioButton
+                android:id="@+id/occasionally_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Occasionally" />
+
+            <RadioButton
+                android:id="@+id/never_radio_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Never" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit" />
+
+    </LinearLayout>
+</ScrollView>
