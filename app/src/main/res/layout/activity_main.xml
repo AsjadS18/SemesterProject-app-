@@ -15,12 +15,13 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@color/material_dynamic_primary30"
+            android:layout_marginTop="15dp"
+            android:background="@color/material_dynamic_primary40"
             android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:logo="@drawable/logosmall"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:title="Medical Health Care"
-            app:titleTextColor="@color/white"
-            android:layout_marginTop="15dp"/>
+            app:titleTextColor="@color/white" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -113,25 +114,14 @@
                         android:text="Doctors"
                         android:onClick="doctors"/>
 
-                    <Button
-                        android:id="@+id/button5"
-                        android:layout_width="226dp"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/editTextTextMultiLine"
-                        android:layout_alignParentStart="true"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginStart="88dp"
-                        android:layout_marginTop="256dp"
-                        android:text="Button" />
-
                     <VideoView
                         android:id="@+id/videoView"
-                        android:layout_width="383dp"
-                        android:layout_height="182dp"
+                        android:layout_width="348dp"
+                        android:layout_height="234dp"
                         android:layout_below="@+id/editTextTextMultiLine"
                         android:layout_alignParentStart="true"
-                        android:layout_marginStart="19dp"
-                        android:layout_marginTop="347dp" />
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="250dp" />
 
                 </RelativeLayout>
 

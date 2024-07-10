@@ -1,6 +1,7 @@
 package com.example.final_semesterptoject;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -31,7 +32,7 @@ public class MedicalHistory extends AppCompatActivity {
             genderMaleRadioButton, genderFemaleRadioButton, tobaccoUseYesRadioButton, tobaccoUseNoRadioButton,
             illegalDrugUseYesRadioButton, illegalDrugUseNoRadioButton, dailyRadioButton, weeklyRadioButton, monthlyRadioButton, occasionallyRadioButton, neverRadioButton;
     private Spinner tobaccoUseSpinner, illegalDrugUseSpinner;
-    private Button submit;
+    private Button submit,btnhome;
     FirebaseDatabase db=FirebaseDatabase.getInstance();
     DatabaseReference reference=db.getReference().child("Medicalform");
     int i=0;
@@ -40,7 +41,7 @@ public class MedicalHistory extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        btnhome=(Button) findViewById(R.id.buttonhome1);
         fullNameEditText = findViewById(R.id.full_name);
         phoneNumberEditText = findViewById(R.id.phone_number);
         submit=findViewById(R.id.submit_button);
@@ -283,6 +284,10 @@ public class MedicalHistory extends AppCompatActivity {
 
     }
 
-
+public void home3(View v)
+{
+    Intent intent=new Intent(MedicalHistory.this, MainActivity.class);
+    startActivity(intent);
+}
 
 }

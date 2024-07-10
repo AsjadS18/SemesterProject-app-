@@ -27,12 +27,12 @@ public class GetStarted extends AppCompatActivity {
     }
     public void medical1(View v)
     {
-        Intent intent=new Intent(GetStarted.this, MedicalHistory.class);
-        startActivity(intent);
+        Intent int1=new Intent(GetStarted.this, MedicalHistory.class);
+        startActivity(int1);
     }
     public void telehealth1(View v)
     {
-        Intent intent=new Intent(GetStarted.this, telehealthconsent.class);
-        startActivity(intent);
+        Intent inte=new Intent(GetStarted.this, telehealthconsent.class);
+        startActivity(inte);
     }
 }

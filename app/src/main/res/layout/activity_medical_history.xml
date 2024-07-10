@@ -323,5 +323,12 @@
             android:layout_height="wrap_content"
             android:text="Submit" />
 
+        <Button
+            android:id="@+id/buttonhome1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Home"
+            android:onClick="home3"/>
+
     </LinearLayout>
 </ScrollView>
